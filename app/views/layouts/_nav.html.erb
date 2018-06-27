@@ -1,0 +1,23 @@
+<nav class="navbar is-dark">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="#">
+      <%= image_tag 'icon.png' %>
+    </a>
+    <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <div id="navbarExampleTransparentExample" class="navbar-menu">
+    <div class="navbar-end">
+        <%= link_to '主页', root_path, class: "navbar-item" %>
+        <%= link_to '博客', articles_path, class: "navbar-item" %>
+        <%= link_to '摄影', photos_index_path, class: "navbar-item" %>
+        <%= link_to '设计', portfolio_index_path, class: "navbar-item" %>
+        <%= link_to '关于', about_index_path, class: "navbar-item" %>
+      </div>
+    </div>
+  </div>
+</nav>
