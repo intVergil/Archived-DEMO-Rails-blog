@@ -11,5 +11,27 @@
  * It is generally better to create a new file per style scope.
  *
  *= require_tree .
+ *= require bulma
  *= require_self
  */
+
+html{
+    font-size: 16px;
+}
+
+body{
+    background-color: #eee;
+}
+
+footer{
+    background-color: #363636;
+    color:white;
+    padding: 45px 0px;
+}
+
+.hr {
+    background-color:black;
+    width:40%;
+    height:2px;
+    margin: 20px auto;
+}

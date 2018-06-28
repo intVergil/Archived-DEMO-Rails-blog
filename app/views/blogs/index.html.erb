@@ -1,0 +1,43 @@
+<div id="blogs">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-3"><!-- 页内导航 -->
+        <%= render 'menu' %>
+      </div>
+
+      <div class="column is-9"><!-- 内容 -->
+        <div class="box">
+          <div class="content"><!-- 首页 -->
+            <%# @articles.each do |article| %>
+              <article>
+<!--                <h1><%#= article.title %></h1>-->
+                <h1>title</h1>
+                <div class="tag">tag</div>
+<!--                <div class="content"><%#= article.text %></div>-->
+
+                <%#= link_to '阅读全文', article_path(article), class: "button is-active" %>
+                <a href="#" class="button is-active">阅读全文</a>
+              </article>
+              <div class="hr"></div>
+            <%# end %>
+          </div>
+        </div>
+        <div class="pagination" role="navigation" aria-label="pagination" style="display: flex;">
+          <a class="pagination-previous" title="This is the first page" disabled>上一页</a>
+          <a class="pagination-next">下一页</a>
+          <ul class="pagination-list">
+            <li>
+              <a class="pagination-link is-current" aria-label="Page 1" aria-current="page">1</a>
+            </li>
+            <li>
+              <a class="pagination-link" aria-label="Goto page 2">2</a>
+            </li>
+            <li>
+              <a class="pagination-link" aria-label="Goto page 3">3</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

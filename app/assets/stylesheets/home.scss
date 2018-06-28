@@ -1,0 +1,82 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#home {
+
+  section {
+    padding:14px;
+    margin: 0 0 150px 0;
+  }
+
+  header {
+    h1 {
+      font-size: 5em;
+      padding: 0px;
+      border-top: 2px solid black;
+      border-bottom: 2px solid black;
+    }
+    p {
+      margin:30px 30px 120px 30px;
+    }
+  }
+
+  .arrow {
+    width:90px;
+    margin:0 auto;
+  }
+
+  section.is-bold {
+    h2 {
+      text-align: center;
+      padding: 30px 0;
+      margin:0 auto;
+    }
+  }
+
+  .hr + p {
+    text-align: center;
+    margin:30px;
+  }
+
+  section .hero-body {
+    margin: 0 0 20px 0;
+  }
+
+  .inner {
+    max-width: 300px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .vcard
+  {
+    float: left;
+    width: 50%;
+    min-height: 300px;
+    padding: 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .vcard:first-child{
+    background: rgba(0, 0, 0,0.04);
+  }
+  .vcard:nth-child(2){
+    background: rgba(0, 0, 0,0.08);
+  }
+  .vcard:nth-child(3){
+    background: rgba(0, 0, 0,0.12);
+  }
+  .vcard:nth-child(4){
+    background: rgba(0, 0, 0,0.16);
+  }
+  .vcard:nth-child(5){
+    background: rgba(0, 0, 0,0.20);
+  }
+  .vcard:nth-child(6){
+    background: rgba(0, 0, 0,0.24);
+  }
+
+
+}
