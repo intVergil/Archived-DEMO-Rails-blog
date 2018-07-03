@@ -11,42 +11,20 @@
         <div class="box" style="min-height:700px">
           <div class="content"><!-- 首页 -->
             <%# @articles.each do |article| %>
-              <article class="has-text-centered">
-<!--                <h1><%#= article.title %></h1>-->
-                <h1>title</h1>
-                <div class="tag">tag</div>
-<!--                <div class="content"><%#= article.text %></div>-->
-                <div>
-                  <div># vBlog
-
-                    学习使用ruby on rails，编写个人主页。
-
-                    ### 生产环境
-
-                    ruby：2.5.1
-                    rails：5.2.0
-                    - 前端框架
-                    - bulma
-                    - fontawesome
-                    - react.js
-                    - 后端框架
-                    - 数据库
-                    - MySQL
-                    - 开源托管
-                    - github
-                    - 服务器
-                    - AWS
-
-                    ### 板块说明
-
-                    - 主页：静态的总体概览页面。
-                    - 博客：动态完整的博客系统（/admin 后台登陆）。
-                    - 摄影：动态的图片上传系统（点赞系统）。
-                    - 设计：学习使用多种静态设计效果。
-                    - 关于：个人简历及联系方式。
-                  </div>
+              <article>
+                <header class="has-text-centered">
+  <!--                <h1><%#= article.title %></h1>-->
+                  <h1>title</h1>
+                  <div class="tag" style="margin-bottom: 20px">tag</div>
+  <!--                <div class="content"><%#= article.text %></div>-->
+                </header>
+                <div style="margin-bottom: 30px">
+                  <%=  markdown("> #####ブール値の命名
+> 真偽値を返す関数またはブール変数の名前を選択するときは、真偽が本当に意味するものが明確であることを確認してください。
+> ここに危険な例があります：
+> 	bool read_password = true;")%>
                 </div>
-                <%= link_to '阅读全文', blogs_show_path, class: "button is-active" %>
+                <div class="has-text-centered"><%= link_to '阅读全文', blogs_show_path, class: "button is-active" %></div>
               </article>
               <div class="hr"></div>
             <%# end %>
