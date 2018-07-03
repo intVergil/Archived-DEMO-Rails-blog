@@ -20,7 +20,7 @@ html{
 }
 
 body{
-    background-color: #eee;
+    background-color: #363636;
 }
 
 footer{
@@ -30,7 +30,7 @@ footer{
 }
 
 .hr {
-    background-color:black;
+    background-color:white;
     width:40%;
     height:2px;
     margin: 20px auto;

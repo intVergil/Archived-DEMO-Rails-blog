@@ -1,36 +1,27 @@
 // Place all the styles related to the blogs controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-#blogs {
+
+#blogs{
 
   div.columns{
     min-height:800px;
     margin:10px 140px 80px;
   }
 
-  div.column.is-9 > div{
-    margin:0px 0px 20px;
-  }
-
-  .box{
-    box-shadow:none;
-    border-radius:0;
-    min-height:700px;
-  }
-
-  aside {
-    border-radius: 6px;
-    div.menu-label{
+  .blogs-menu {
+    .menu-label{
       display:flex;
       margin:0px;
       height:90px;
-      background-color:#363636;
-      font-size:20px;
-      color:#fff;
+      background: rgba(0, 0, 0, 0.5);
       flex-direction:column;
       justify-content:center;
       align-items:center;
       span{
+        font-size:20px;
+        font-weight: bold;
+        color:#fff;
         padding:10px 0;
       }
       p{
@@ -41,8 +32,8 @@
     ul{
       background:white;
     }
-
   }
+
   .menu-list a{
     padding: 0.75em 1.5em;
     span{
@@ -55,6 +46,13 @@
     height:18px;
   }
 
+}
+
+
+
+#blog {
+
+
   div.hr{
     width:80%;
     background:#77777777;
@@ -65,9 +63,6 @@
     display:none;
   }
 
-  h1{
-    margin:0 0 8px 0;
-  }
 
   div.tag{
     margin:0 0 20px 0;

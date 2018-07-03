@@ -1,2 +1,95 @@
-<h1>Blogs#show</h1>
-<p>Find me in app/views/blogs/show.html.erb</p>
+<div id="blogs">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-3"><!-- 页内导航 -->
+        <div class="blogs-menu">
+          <%= render 'menu' %>
+        </div>
+      </div>
+
+      <div class="column is-9"><!-- 内容 -->
+        <div class="box" style="min-height:700px">
+          <div class="content"><!-- 首页 -->
+            <%# @articles.each do |article| %>
+            <article class="has-text-centered">
+              <!--                <h1><%#= article.title %></h1>-->
+              <h1>title</h1>
+              <div class="tag">tag</div>
+              <!--                <div class="content"><%#= article.text %></div>-->
+              <div>
+                <div>
+                  # vBlog
+
+                  学习使用ruby on rails，编写个人主页。
+
+                  ### 生产环境
+
+                  ruby：2.5.1
+                  rails：5.2.0
+                  - 前端框架
+                  - bulma
+                  - fontawesome
+                  - react.js
+                  - 后端框架
+                  - 数据库
+                  - MySQL
+                  - 开源托管
+                  - github
+                  - 服务器
+                  - AWS
+
+                  ### 板块说明
+
+                  - 主页：静态的总体概览页面。
+                  - 博客：动态完整的博客系统（/admin 后台登陆）。
+                  - 摄影：动态的图片上传系统（点赞系统）。
+                  - 设计：学习使用多种静态设计效果。
+                  - 关于：个人简历及联系方式。
+
+                  ### TodoList
+
+                  * [x] 原型设计
+                  * [x] 新建项目
+                  * [x] 确认控制器及模型
+                  * [x] 静态页面
+                  * [ ] Markdown渲染
+                  * [ ] 博客模型
+                  * [ ] 博客管理
+                  * [ ] Markdown编辑器
+                  * [ ] 作品集Demo（1～2个）
+                  * [ ] 相册模型
+                  * [ ] 相册管理
+                  * [ ] 标签功能
+                  * [ ] 翻页功能
+                  * [ ] 归档功能
+                  * [ ] 评论功能（基于邮箱？）
+                  * [ ] 回到顶部
+                  * [ ] 整理代码
+                  * [ ] 渲染优化
+                  * [ ] 适配移动端
+                  * [ ] React Native App
+
+                  ### Update Log
+
+                  |时间|事件|
+                  |:---|:---|
+                  |2018/06/27|生产新项目【vblog】，学习使用git，托管至github。|
+                  |2018/06/28|设计控制器及模型，制作静态大纲|
+
+
+                  ### 问题汇总
+
+                  - 前期没有设计好MVC构架，导致2次重启项目。
+                  - 学习使用react.js遇到瓶颈，前置技能略多。对于js不熟悉，补习中。
+
+                </div>
+              </div>
+            </article>
+            <div class="hr"></div>
+            <%# end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
