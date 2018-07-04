@@ -8,8 +8,8 @@
       </div>
 
       <div class="column is-9"><!-- 内容 -->
-        <div class="box" style="min-height:700px">
-          <div class="content"><!-- 首页 -->
+        <div class="box">
+          <div class="content" style="padding: 5px 0px 20px"><!-- 首页 -->
             <%# @articles.each do |article| %>
             <article>
               <header class="has-text-centered">
@@ -32,12 +32,67 @@
 > - パスワードを読む必要があります
 > - パスワードはすでに読み込まれています
 >
-> この場合、「読み込み」という単語を避け、need_passwordまたはuser_is_authenticatedという名前を付けてください。")%>
+> この場合、「読み込み」という単語を避け、need_passwordまたはuser_is_authenticatedという名前を付けてください。
+>
+> 一般に、is、has、canのような単語を追加すると、ブール値をより明確にすることができます。
+>
+> たとえば、SpaceLeft（）という名前の関数は数値を返すように聞こえます。 ブール値を返すことを意図していた場合、より良い名前はHasSpaceLeft（）です。
+>
+> 最後に、名前の否定された語句を避けるのが最善です。 たとえば、次の代わりに：
+> 	```bool disable_ssl = false;```
+>
+> それを読んで（そしてよりコンパクトに）言うのがより簡単になります：
+> 	```bool **use_ssl** = true;``` ")%>
                 </div>
-
               </div>
             </article>
             <%# end %>
+          </div>
+        </div>
+        <div><!-- 评论 -->
+          <div class="field is-horizontal">
+            <div class="field-body">
+              <div class="field">
+                <div class="control">
+                  <textarea class="textarea" placeholder="添加你的评论..."></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="field is-horizontal">
+            <div class="field-body">
+              <div class="field">
+                <p class="control is-expanded has-icons-left">
+                  <input class="input" type="text" placeholder="名字">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-user"></i>
+                  </span>
+                </p>
+              </div>
+              <div class="field">
+                <p class="control is-expanded has-icons-left has-icons-right">
+                  <input class="input" type="email" placeholder="your@example.mail">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                  <span class="icon is-small is-right">
+                    <i class="fas fa-check"></i>
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="field is-grouped is-grouped-right">
+            <p class="control">
+              <a class="button is-primary">
+                提交
+              </a>
+            </p>
+            <p class="control">
+              <a class="button is-light">
+                返回
+              </a>
+            </p>
           </div>
         </div>
       </div>
